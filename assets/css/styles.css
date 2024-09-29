@@ -1,0 +1,135 @@
+@font-face {
+font-family: titles-font;
+src: url("./fonts/fontfile-997.ttf") format(truetype);
+}
+
+@font-face {
+font-family: body-font;
+src: url("./fonts/fontfile-895.ttf") format(truetype);
+}
+
+
+html, body {
+-webkit-font-size-adjust:100%;
+-moz-font-size-adjust:100%;
+font-size-adjust:100%;
+}
+
+body, body * {
+box-sizing:border-box;
+}
+
+body {
+margin:0;
+padding:0;
+font-family: body-font;
+line-height:1.6;
+color:#333;
+}
+body, body * {
+box-sizing:border-box;
+}
+
+.font-primary {
+font-family: titles-font;
+}
+
+section, main, div, p, header, .block-section {
+display:block;
+}
+
+.container {
+display:block;
+padding:0;
+width:100%;
+}
+.line {
+display:block;
+margin:0rem;
+padding:0;
+}
+
+.clearfix:before, .clearfix:after,
+.line:before, .line:after {
+content:"";
+display:table;
+}
+.clearfix:before, .line:after {
+clear:both;
+}
+.header-page {
+padding-top:4rem;
+}
+.spacer {height:5rem;}
+
+img {
+width:100%;
+}
+.img-root {
+width:auto;
+}
+
+
+.title {
+font-size:1.6rem;
+margin-bottom: 1.4rem;
+}
+
+.type-title {
+font-size:1.2rem;
+}
+
+.icon-ttl {
+font-size:2rem;
+margin-right: 0.6rem;
+}
+
+.important {
+background:#ffead6;
+color:#ff8a19;
+padding:0 0.7rem;
+}
+
+figure {
+margin:0;
+padding:0;
+}
+
+.footer {
+background:#0048b8;
+color:#fff;
+}
+
+@media (max-width:767px) {
+body {
+font-size:0.85rem;
+}
+.title {
+font-size:1.3rem;
+}
+.icon-ttl {
+font-size:1.4rem;
+}
+.method-section {
+padding:0.7rem;
+}
+.method-name {
+font-size:0.87rem;
+}
+.header-brand {
+width:20%;
+}
+
+}
+
+@media (min-width:768px) and (max-width:1279px) {
+.header-brand {
+width:16%;
+}
+}
+
+@media (min-width:1280px) {
+.header-brand {
+width:12%;
+}
+}

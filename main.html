@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
+<link rel="stylesheet" href="./src/dist/codesnip.css">
+<link rel="stylesheet" href="./assets/css/util.css">
+<link rel="stylesheet" href="./assets/css/BSI/bootstrap-icons.css">
+<link rel="stylesheet" href="./assets/css/styles.css">
+<link rel="stylesheet" href="./assets/css/fastcss/grid.css">
+<link rel="stylesheet" href="./assets/css/fastcss/text.css">
+<title>Codesnip</title>
+</head>
+<body>
+	<header class="header-page" >
+		<div class="line" >	
+			<div class="lg-col-8 lg-ofs-2 md-col-10 md-ofs-1 md-pad-3x sm-col-auto" >
+				<div class="header-brand" >
+					<img src="./assets/img/brand-4.png" >
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<div id="test"></div>
+	
+	<main class="container" >
+		<div class="line" >
+			<div class="lg-col-8 lg-ofs-2 md-col-10 md-ofs-1 sm-col-auto" >
+				<h1 class="font-primary title blue" >
+					#codesnip : Documentation
+				</h1>
+			</div>
+		</div>
+				
+		<div class="spacer" ></div>
+		
+		<div class="line" >
+			<div class="lg-col-8 lg-ofs-2 md-col-10 md-ofs-1 sm-col-auto" >
+				<div>
+					Pour utiliser l'outil, la première de chose à faire est de le télecharger.<br> 
+					Il est composé d'un fichier JavaScript et CSS.<br>
+					Ensuite, d'inclure ces fichiers dans votre document HTML aux endroits appropriés et reservés 
+					à chaque type de fichier
+					<br><br>
+					Il est important que le fichier javaScript soit inclu à la fin de
+					la page pour eviter des manipulations précoces du document.
+					<br><br><br><br>
+					<a href="./src/codesnip.zip"  class="btn btn-primary" >
+						télécharger la libraire
+						<span class="bi bi-download" ></span>
+					</a> 
+				</div>
+			</div>
+		</div>
+		
+		<div class="spacer" ></div>
+		
+		<div class="line" >
+			<div class="lg-col-8 lg-ofs-2 md-col-10 md-ofs-1 sm-col-auto" >
+				<h1 class="font-primary title" >
+					Types de snippet
+				</h1>
+				<div>
+					codesnip dispose de 4 types de snippet qui permettrons de disposer le contenu selon un format
+					particulier dans le document HTML :  
+					<ul class="list-theme" >
+						<li point="snippet-text" class="clearfix" >
+							Le snippet pour le texte simple
+							<span class="bi bi-chevron-right fs-2x push-right" ></span>
+						</li>
+						<li point="snippet-html" class="clearfix">
+							Le snippet pour le HTML
+							<span class="bi bi-chevron-right fs-2x push-right" ></span>
+						</li>
+						<li point="snippet-css" class="clearfix">
+							Le snippet pour le CSS
+							<span class="bi bi-chevron-right fs-2x push-right" ></span>
+						</li>
+						<li point="snippet-js" class="clearfix">
+							Le snippet pour le JavaScript
+							<span class="bi bi-chevron-right fs-2x push-right" ></span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="spacer" ></div>
+		<div class="spacer" ></div>
+		
+		<div class="line" >
+			<div land="snippet-text" class="lg-col-8 lg-ofs-2 md-col-10 md-ofs-1 sm-col-auto" >
+				<div class="snippet-type-header clearfix" >
+					<span class="font-primary type-title" >1. Snippet de texte</span>
+					<span class="bi bi-pencil fs-middle push-right" ></span>
+				</div>
+				<div>
+					Ce snippet permet de disposer un contenu au format texte 
+					simple et ne possède pas de coloration syntaxique.<br>
+					Il s'avère utile dans la mesure où  souhaiterai illuster un certain
+					texte pur.
+					<div class="csnip" csnip-lang="text">
+						<div class="csnip-body" >
+							Ceci est un exemple de snippet de texte simple 
+							qui peut pourrait s'avérer très utile dans certains contextes.
+							
+							
+							--- CODESNIP---
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="spacer" ></div>
+		
+		<div class="line" >
+			<div land="snippet-html" class="lg-col-8 lg-ofs-2 md-col-10 md-ofs-1 sm-col-auto" >
+				<div class="snippet-type-header clearfix" >
+					<span class="font-primary type-title" >2. Snippet pour HTML</span>
+					<span class="bi bi-pencil fs-middle push-right" ></span>
+				</div>
+				<div>
+					Ce snippet permet de disposer un contenu au format HTML avec coloration
+					syntaxique.<br>
+					Il faudrait cependant souligner qu'il n'est pas possible de combiner le HTML 
+					et CSS ou JavasCript dans le même snippet parceque chaque snippet a son propre 
+					algorithme d'analyse pour detecter certains élements spécifiques à ce langu				
+					<div class="csnip" csnip-lang="html">
+						<div class="csnip-body" >
+							<div class="myClass" id="myIdAttrivute">
+								<h1>Hallo codesnip</h1>
+								<p>
+									Ceci est un exemple de snippet pour HTML
+									<!-- un commetaire par ici -->
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="spacer" ></div>
+		
+		<div class="line" >
+			<div land="snippet-css" class="lg-col-8 lg-ofs-2 md-col-10 md-ofs-1 sm-col-auto" >
+				<div class="snippet-type-header clearfix" >
+					<span class="font-primary type-title" >3. Snippet pour CSS</span>
+					<span class="bi bi-pencil fs-middle push-right" ></span>
+				</div>
+				<div>
+					Ce snippet permet de disposer un contenu au format CSS avec coloration
+					syntaxique des élements basiques spécifiques au langage CS
+					<div class="csnip" csnip-lang="css">
+						<div class="csnip-body" >
+							@media (min-width : 1280px){
+								body {
+									max-width : 1280px;
+									margin: 0 auto;
+								}
+							}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="spacer" ></div>
+		
+		<div class="line" >
+			<div land="snippet-js" class="lg-col-8 lg-ofs-2 md-col-10 md-ofs-1 sm-col-auto" >
+				<div class="snippet-type-header clearfix" >
+					<span class="font-primary type-title" >4. Snippet pour JavaScript</span>
+					<span class="bi bi-pencil fs-middle push-right" ></span>
+				</div>
+				<div>
+					Ce snippet permet de disposer un code JavaScript avec coloration syntaxique 
+					de certains élements du langage.<br>
+					Il faut souligner qu'il n'y a pas une très grande palette d'élements 
+					de syntaxe pris en compte. Toutefois, ce model de snippet prend en 
+					compte un certain nombre d'élements de syntaxe necessaires pour un JavaScript
+					valide et comprehensif.
+					
+					<div class="csnip" csnip-lang="js">
+						<div class="csnip-body" >
+							let codesnip = "halllo dear codesnip";
+							var name = "Big Boy";
+							function add(first, second){
+								return first + second;
+							}
+							// a comment
+							var numb = 45;
+							call(true, false)
+							call
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="spacer" ></div>
+		<div class="spacer" ></div>
+		
+		<div class="line" >
+			<div class="lg-col-8 lg-ofs-2 md-col-10 md-ofs-1 sm-col-auto" >
+				<h1 class="font-primary title" >
+					Manipulation JavaScript
+				</h1>				
+				<div>
+					Un snippet valide doit au-moins avoir une structure html semblable à ce qui suut :
+					
+					<div class="csnip" csnip-lang="html">
+						<div class="csnip-body" >
+							<div class="csnip" csnip-lang="langage à utiliser" >
+								<div class="csnip-body" >
+									Endroit principal ou disposer le contenu à analyser
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					L'attribut <b>csnip-lang</b> permet de spécifier la façons dont on 
+					aimerait considérer et analyser le contenu qui se trouve dans la balise ayant 
+					la classe <b>csnip-body</b><br><br>
+					
+					En JavaScript, il faudrait invoquer la fonction <b>csnip()</b>
+					, laquelle retourne un objet sur lequel il est possible d'appler 
+					les methodes suivante pur effectuer un traitement : 
+					
+					<div class="method-section" >
+						<div class="flex-row" >
+							<span class="method-name" >csnip(arg)</span>
+						</div>
+						<div class="method-description" >
+							La cette fonction est la principale function sur la quelle seront appelées 
+							les autres méthodes qui suivent.<br>
+							Suivant le contexte, cette méthode prend en argument :
+							<b>soit un noeud du DOM, soit une chaîne de caractère faisant réference
+							à un selecteur</b><br>
+							
+							Il est important de savoir que les élements ciblés par selecteur oupar noeud du DOM 
+							doivent faire reférence à un ou plusieurs <b>snippets</b> de votre document html actuel.
+							
+							<div class="csnip" csnip-lang="js" >
+								<div class="csnip-body" >
+									csnip('[csnip="js"]') //Exemple avec un selecteur
+									csnip(document.getElementById("mySnippetId")) // Exemple avec un noeud du DOM
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					
+					<div class="method-section" >
+						<div class="flex-row" >
+							<span class="method-name" >csnip().ready(callback)</span>
+						</div>
+						<div class="method-description" >
+							Cette méthode est un méanosme de sécurité qui permet de 
+							n'exécuter un certain nombre de manipulations que si le DOM est chargé et disponible
+							pour la manipulation.<br>
+							
+							Elle prend en argument une finction qui sera executée dès que le DOM <b>sera prêt au manipulations</b>
+							
+							<div class="csnip" csnip-lang="js">
+								<div class="csnip-body" >
+									csnip().ready(function(){
+										console.log("je suis prêt !");
+										csnip().docparse(); // A voir plus bas...
+									})
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					
+					<div class="method-section" >
+						<div class="flex-row" >
+							<span class="method-name" >
+								csnip(arg).parse(content, lang)
+							</span>
+						</div>
+						<div class="method-description" >
+							Cette méthode prend en argument deux élements : <br><br>
+							1. Un contenu à analyser et qui sera mis dans le snippet ciblé.<br>
+							2. Un langage cible dans lequel le contenu précedent doit être analysé.
+							Ces languages cible sont : html, js, css, text.<br>
+							
+							<div class="csnip" csnip-lang="js">
+								<div class="csnip-body" >
+									csnip('[csnip="js"]').parse("var name = 'John Doe'", "js")
+									/* Analyse le snippets trouvé avec la chaîne de selecteur specifiée 
+									   avec le contenu "var name = 'John Doe'" en tant que JavaScript et 
+									   met le résutat de l'analyse dans les snippets ciblés.
+									*/
+								</div>
+							</div>
+							
+							<div class="msg msg-info" >
+								<span class="bi bi-info-circle-fill fs-2x" ></span><br>
+								Il faudrait souliger que les arguments passés à cette methode sont 
+								optionnelles.<br>
+								Si on omet, les snippets ciblés seront analysé en fonction de l'attribut 
+								<kbd><b>csnip-lang</b></kbd>  qui sera trouvé sur ceux-ci.
+							</div>
+						</div>
+					</div>
+					
+					
+					<div class="method-section" >
+						<div class="flex-row" >
+							<span class="method-name" >csnip(arg).update(content, lang)</span>
+						</div>
+						<div class="method-description" >
+							Cette méthode fonctionne un peu comme <kbd><b>parse()</b></kbd>
+							mais avec la différence que celle-ci met à jour le snippet ciblé avac le nouveau
+							contenu fournit en premier argument
+							
+							<div class="csnip" csnip-lang="js">
+								<div class="csnip-body" >
+									csnip('[csnip="js"]').update("let newContent = 'i am a new content !'", "js");
+									/*
+										Met à jour (ou remplace) l'anien contenu par le nouveau passé en premier argument
+										et l'analyse dans le langage cible passé en deuxième argument
+									*/
+								</div>
+							</div>
+							
+							<div class="msg msg-info" >
+								<span class="bi bi-info-circle-fill fs-2x icon-ttl" ></span><br>
+								Il faudrait noter que la langue cible est 
+								optionnelle. La langue sera automatiquemet détectée en fonction des attributs du snippet
+							</div>
+						</div>
+					</div>
+					
+					
+					<div class="method-section" >
+						<div class="flex-row" >
+							<span class="method-name" >csnip(arg).styles({})</span>
+						</div>
+						<div class="method-description" >
+							Cette méthode est employé pour styliser l'apparence du snippet.<br>
+							Elle prend en argument un objet qui répresente les styles CSS à appliquer 
+							au snippet.
+							<div class="csnip" csnip-lang="js">
+								<div class="csnip-body" >
+									csnip('[csnip="js"]').styles({
+										'border-radius' : '5px',
+										'margin' : '2rem 0',
+										'background-color' : '#eee'
+									});
+									/*
+										Stylise le snippet cyblé avec les propriétés CSS spécifiés.
+									*/
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					
+					<div class="method-section" >
+						<div class="flex-row" >
+							<span class="method-name" >csnip(arg).docparse()</span>
+						</div>
+						<div class="method-description" >
+							Cette méthode analyse tout le document html actuel et détecte tous 
+							les snippets uis les analyse en fonction des attributs spécifique à chacun.<br><br>
+							
+							Il est recommandé d'utilser cette méthode après que le DOM soit prêt.
+							
+							<div class="csnip" csnip-lang="js">
+								<div class="csnip-body" >
+									csnip().ready(function(){
+										csnip().docparse(); 
+									});
+									/*
+										Attend la disponibilité du DOM,
+										Analyse tout le document html et les snippets présents.
+									*/
+								</div>
+							</div>
+						</div>
+					</div>					
+				</div>
+			</div>
+		</div>
+		
+		<div class="spacer" ></div>
+		
+		<div class="line" >
+			<div class="lg-col-8 lg-ofs-2 md-col-10 md-ofs-1 sm-col-auto" >
+				<h1 class="font-primary title" >
+					Personnalisation d'élements de langage
+				</h1>
+				<div>
+					Dans le contexte où vous souhaiteriez modifier l'apparence 
+					par défaut des snippets en général et les couleurs de certains 
+					élements typiques d'un langage en particulier, il est recommandé de 
+					procéder avec les plus d'attention possible à la modification du fichier
+					<kbd><b> codesnip.js </b></kbd> fournit avac cette libraire.<br><br>
+					
+					C'est dans ce fichier qu'il sera possible de modifier le CSS de certains élement de 
+					laguage et les modifications <span class="important" > doivent être effectuées uniquement sur les valeurs des propriétés. </span><br><br>
+					
+					Il n'est cependant <span class="important" >pas recommandé de modifier les noms des classes ou des propriétés 
+					se trouvant dans ce fichier</span>, par crainte d'incohérences entre le code de la libraire et
+					le CSS de ce fichier et des erreur de rendu.
+				</div>
+			</div>
+		</div>
+		
+		<div class="spacer" ></div>		
+	</main>
+	<footer class="footer" >
+		<div class="line pad-3x" >
+			<div class="lg-col-8 lg-ofs-2 md-col-10 md-ofs-1 sm-col-auto" >
+				<figure>
+					<img class="img-root"  src="./assets/img/brand-8.png" alt="codesnip" >
+				</figure>
+				<h3 class="font-primary" >codesnip</h3>
+				codesnip 2024<br>
+				Theo Makeba
+			</div>
+		</div>
+	</footer>
+<script type="text/javascript" src="./src/dist/codesnip.js"></script>
+<script type="text/javascript">	
+	csnip().ready(function()
+	{		
+		csnip().docparse();
+	});
+</script>
+<script type="text/javascript" src="./assets/JS/scroller.js"></script>
+</body>
+</html>
