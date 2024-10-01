@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
 <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
-<link rel="stylesheet" href="./src/dist/codesnip.css">
+<link rel="stylesheet" href="./src/dist/codesnip.min.css">
 <link rel="stylesheet" href="./assets/css/util.css">
 <link rel="stylesheet" href="./assets/css/BSI/bootstrap-icons.css">
 <link rel="stylesheet" href="./assets/css/styles.css">
@@ -259,11 +259,11 @@
 							<span class="method-name" >csnip().ready(callback)</span>
 						</div>
 						<div class="method-description" >
-							Cette méthode est un méanosme de sécurité qui permet de 
+							Cette méthode est un mécanisme de sécurité qui permet de 
 							n'exécuter un certain nombre de manipulations que si le DOM est chargé et disponible
 							pour la manipulation.<br>
 							
-							Elle prend en argument une finction qui sera executée dès que le DOM <b>sera prêt au manipulations</b>
+							Elle prend en argument une function qui sera executée dès que le DOM <b>sera prêt aux manipulations</b>
 							
 							<div class="csnip" csnip-lang="js">
 								<div class="csnip-body" >
@@ -317,7 +317,7 @@
 						<div class="method-description" >
 							Cette méthode fonctionne un peu comme <kbd><b>parse()</b></kbd>
 							mais avec la différence que celle-ci met à jour le snippet ciblé avac le nouveau
-							contenu fournit en premier argument
+							contenu fourni en premier argument
 							
 							<div class="csnip" csnip-lang="js">
 								<div class="csnip-body" >
@@ -368,7 +368,7 @@
 						</div>
 						<div class="method-description" >
 							Cette méthode analyse tout le document html actuel et détecte tous 
-							les snippets uis les analyse en fonction des attributs spécifique à chacun.<br><br>
+							les snippets puis les analyse en fonction des attributs spécifiques à chacun.<br><br>
 							
 							Il est recommandé d'utilser cette méthode après que le DOM soit prêt.
 							
@@ -400,7 +400,7 @@
 					Dans le contexte où vous souhaiteriez modifier l'apparence 
 					par défaut des snippets en général et les couleurs de certains 
 					élements typiques d'un langage en particulier, il est recommandé de 
-					procéder avec les plus d'attention possible à la modification du fichier
+					procéder avec le plus d'attention possible à la modification du fichier
 					<kbd><b> codesnip.js </b></kbd> fournit avac cette libraire.<br><br>
 					
 					C'est dans ce fichier qu'il sera possible de modifier le CSS de certains élement de 
@@ -408,7 +408,7 @@
 					
 					Il n'est cependant <span class="important" >pas recommandé de modifier les noms des classes ou des propriétés 
 					se trouvant dans ce fichier</span>, par crainte d'incohérences entre le code de la libraire et
-					le CSS de ce fichier et des erreur de rendu.
+					le CSS de ce fichier et des erreurs de rendu.
 				</div>
 			</div>
 		</div>
@@ -427,12 +427,12 @@
 			</div>
 		</div>
 	</footer>
-<script type="text/javascript" src="./src/dist/codesnip.js"></script>
+<script type="text/javascript" src="./src/dist/codesnip.min.js"></script>
 <script type="text/javascript">	
-	csnip().ready(function()
-	{		
-		csnip().docparse();
-	});
+csnip().ready(function()
+{		
+	csnip().docparse();
+});
 </script>
 <script type="text/javascript" src="./assets/JS/scroller.js"></script>
 </body>

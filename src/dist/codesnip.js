@@ -1,7 +1,7 @@
 /*
  ! codesnip v.1.0.0
  ! 2024
- ! Theo Makeba : @theomakeba@gmail.com
+ ! Theo Makeba : theomakeba@gmail.com
 */
 
 (function(global,fnc){

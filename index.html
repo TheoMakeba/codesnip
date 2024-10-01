@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
 <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
-<link rel="stylesheet" href="./src/dist/codesnip.css">
+<link rel="stylesheet" href="./src/dist/codesnip.min.css">
 <link rel="stylesheet" href="./assets/css/BSI/bootstrap-icons.css">
 <link rel="stylesheet" href="./assets/css/styles.css">
 <link rel="stylesheet" href="./assets/css/util.css">
@@ -72,7 +72,7 @@
 					Faciliter la compréhension du code
 				</h1>
 				<div>
-					Avec des extrait de code bien précis, il est plus facile 
+					Avec des extraits de code bien précis, il est plus facile 
 					de faire comprendre un concept et véhiculer un message beaucoup 
 					plus rapidement	que de devoir passer par une londue documentation textuelle.
 					<br><br>
@@ -153,17 +153,12 @@
 			</div>
 		</div>
 	</footer>
-<script type="text/javascript" src="./src/dist/codesnip.js"></script>
+<script type="text/javascript" src="./src/dist/codesnip.min.js"></script>
 <script type="text/javascript">	
-
-	csnip().ready(function()
-	{		
-		csnip().docparse();
-	});
-</script>
-<script type="text/javascript">
-
-
+csnip().ready(function()
+{		
+	csnip().docparse();
+});
 </script>
 </body>
 </head>
